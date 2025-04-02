@@ -32,3 +32,4 @@ build/
 
 # Ignore Vercel deployment files
 .vercel/
+.vercel
