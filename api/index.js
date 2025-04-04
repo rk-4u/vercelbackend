@@ -7,7 +7,7 @@ require('./dbConnection');
 
 const app = express();
 app.use(cors({
-    origin: "http://localhost:3000", // Allow requests from your frontend
+    origin: "https://yashiitservices.in/", // Allow requests from your frontend
     methods: "GET,POST,PUT,DELETE", // Allowed request methods
     allowedHeaders: "Content-Type, Authorization" // Allowed headers
   }));
