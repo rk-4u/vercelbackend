@@ -7,7 +7,8 @@ require('./dbConnection');
 
 const app = express();
 app.use(cors({
-    origin: "https://yashiitservices.in/", // Allow requests from your frontend
+    origin: ['http://localhost:3000',  // Allow localhost for development
+  'https://yashiitservices.in' ], // Allow requests from your frontend
     methods: "GET,POST,PUT,DELETE", // Allowed request methods
     allowedHeaders: "Content-Type, Authorization" // Allowed headers
   }));
@@ -15,7 +16,6 @@ const PORT = process.env.PORT || 4000;
 
 // Initialize Express app
 app.use(express.json());
-app.use(cors());
 
 
 app.use('/users',router)
